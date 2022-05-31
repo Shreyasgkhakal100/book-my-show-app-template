@@ -1,3 +1,4 @@
 import { MoviesTable } from './MoviesTable';
+import { AddMovie } from './AddMovie';
 
-export default MoviesTable;
+export { MoviesTable, AddMovie };
