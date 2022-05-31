@@ -7,7 +7,6 @@ import { DashboardProps, IMovie } from './types';
 
 export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
     const [movies, setMovies] = useState<IMovie[]>([]);
-    const [render, setRender] = useState(false);
 
     const getMovies = useCallback(async () => {
         try {
@@ -20,7 +19,7 @@ export const Dashboard: FC<DashboardProps> = ({ isLoading }) => {
 
     useEffect(() => {
         getMovies();
-    }, [render]);
+    }, []);
 
     return (
         <PageContent isLoading={isLoading}>
