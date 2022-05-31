@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesTable should render only thead for empty movies list 1`] = `
+<div>
+  <table
+    class="table"
+  >
+    <thead
+      class="thead-light"
+    >
+      <tr>
+        <th
+          scope="col"
+        >
+          Sr. No.
+        </th>
+        <th
+          scope="col"
+        >
+          Id
+        </th>
+        <th
+          scope="col"
+        >
+          Title
+        </th>
+        <th
+          scope="col"
+        >
+          Duration
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`MoviesTable should render properly 1`] = `
+<div>
+  <table
+    class="table"
+  >
+    <thead
+      class="thead-light"
+    >
+      <tr>
+        <th
+          scope="col"
+        >
+          Sr. No.
+        </th>
+        <th
+          scope="col"
+        >
+          Id
+        </th>
+        <th
+          scope="col"
+        >
+          Title
+        </th>
+        <th
+          scope="col"
+        >
+          Duration
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          1
+        </td>
+        <td>
+          Movie 1
+        </td>
+        <td>
+          120
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          2
+        </td>
+        <td>
+          Movie 2
+        </td>
+        <td>
+          120
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          3
+        </td>
+        <td>
+          Movie 3
+        </td>
+        <td>
+          120
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
