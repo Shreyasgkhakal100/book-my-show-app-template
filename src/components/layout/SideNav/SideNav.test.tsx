@@ -1,3 +1,6 @@
+import { renderWithRouter } from '@utils/test-utils';
+import { SideNav } from './SideNav';
+
 // const mockHistoryPush = jest.fn();
 
 // jest.mock('react-router-dom', () => ({
@@ -9,7 +12,7 @@
 
 describe('SideNav', () => {
     it('should call history.push on click on dashboard', async () => {
-        // renderWithRouter(<SideNav />);
+        renderWithRouter(<SideNav />);
         // userEvent.click(screen.getByText('Dashboard'));
         // expect(mockHistoryPush).toHaveBeenCalledWith('/');
     });

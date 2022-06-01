@@ -10,7 +10,7 @@ export const AddMovie: FC<AddMovieProps> = ({ getMovies }) => {
         setMovie({ ...movie, [id]: value });
     }
 
-    async function handleSubmit(): Promise<void> {
+    async function handleSubmit() {
         try {
             await axios.post('/api/movies', movie);
             getMovies();
@@ -32,6 +32,7 @@ export const AddMovie: FC<AddMovieProps> = ({ getMovies }) => {
                     onChange={e => {
                         handleChange(e);
                     }}
+                    minLength={1}
                 />
             </div>
             <div className="form-group mx-sm-3 mb-2">
@@ -42,7 +43,8 @@ export const AddMovie: FC<AddMovieProps> = ({ getMovies }) => {
                     type="number"
                     className="form-control"
                     id="duration"
-                    min="5"
+                    min="300"
+                    max="21600"
                     placeholder="Duration"
                     onChange={e => {
                         handleChange(e);

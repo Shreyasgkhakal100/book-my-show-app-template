@@ -2,13 +2,9 @@ import { mockAxios, renderWithRouter } from '@utils/test-utils';
 import { AddMovie } from './AddMovie';
 import { fireEvent, screen, waitFor } from '@testing-library/react';
 
+const mockGetMovies = jest.fn();
+
 describe('AddMovies', () => {
-    let mockGetMovies;
-
-    beforeEach(() => {
-        mockGetMovies = jest.fn();
-    });
-
     afterEach(() => {
         jest.clearAllMocks();
     });

@@ -4,7 +4,7 @@ export type MoviesTableProps = {
 };
 
 export type AddMovieProps = {
-    getMovies: any;
+    getMovies: () => void;
 };
 export interface Movie {
     title: string;

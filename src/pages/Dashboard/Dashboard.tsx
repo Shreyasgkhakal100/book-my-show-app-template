@@ -1,7 +1,7 @@
-import { PageContent } from '@components/layout';
 import { Text } from '@medly-components/core';
 import axios from 'axios';
 import { FC, useCallback, useEffect, useState } from 'react';
+import PageContent from '../../components/layout/PageContent';
 import { MoviesTable, AddMovie } from './components';
 import { DashboardProps, IMovie } from './types';
 
